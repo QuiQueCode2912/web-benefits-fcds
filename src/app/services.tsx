@@ -32,3 +32,4 @@ export async function fetchCategories() {
     console.error(err);
   }
 }
+

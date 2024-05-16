@@ -7,8 +7,6 @@ import { fetchCategories } from "@/app/services"
 export default async function Header() {
 
   const categories = await fetchCategories();
-
-  console.log(categories)
   
   return (
     <header>
