@@ -67,7 +67,7 @@ export default async function Home() {
             Mostrar todos
           </Link>
         </div>
-        <div className="grid gap-4">
+        <div className="grid md:grid-cols-2 gap-4">
           {blogs?.data?.filter((blog:any) => blog.attributes.benefit_categorie.data.attributes.slug === 'entorno').slice(0, 4).map((blog:any) => (
             <BlogCard blog={blog}/>
           ))}
