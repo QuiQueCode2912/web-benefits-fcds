@@ -1,6 +1,7 @@
 import Container from '@/components/Container'
 import { fetchBlogs } from "../services"
 import BlogCard from '@/components/BlogCard';
+import BackButton from '@/components/BackButton';
 
 export default async function page()  {
 
@@ -9,6 +10,7 @@ export default async function page()  {
   return (
     <Container>
       <div className="space-y-10">
+      <BackButton />
       <div className="text-2xl font-semibold text-black dark:text-white">
         ¡Un entorno mágico! 🪄
       </div>

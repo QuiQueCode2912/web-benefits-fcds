@@ -1,6 +1,8 @@
 import Container from "@/components/Container"
 import { fetchBlogs } from "../services"
 import BlogCard from "@/components/BlogCard";
+import Link from "next/link";
+import BackButton from "@/components/BackButton";
 
 export default async function page() {
 
@@ -8,7 +10,8 @@ export default async function page() {
 
   return (
     <Container>
-      <div className="space-y-8">
+      <div className="space-y-8 ">
+        <BackButton />
         <div className="text-2xl font-semibold text-black dark:text-white">
           Formación y desarrollo 🧩
         </div>
