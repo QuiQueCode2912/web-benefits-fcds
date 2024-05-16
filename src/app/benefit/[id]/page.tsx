@@ -46,7 +46,7 @@ const Page = async ({ params }: { params: { id: number } }) => {
           { "< Back "}
         </Link>
         <div>
-          <span className='mt-2 text-sm dark:text-gray-400'>{`Última actualización: ${formattedDate}`}</span>
+          <span className='mt-2 font-light text-sm dark:text-gray-400'>{`Última actualización: ${formattedDate}`}</span>
           <img className='w-full mt-2 max-h-[420px] object-cover' src={`${process.env.LOCALHOST}${blog.data.attributes.image.data.attributes.url}`} alt="Fotografía del blog de beneficios" />
         </div>
         <h4 className='text-2xl'>{blog.data.attributes.name}</h4>

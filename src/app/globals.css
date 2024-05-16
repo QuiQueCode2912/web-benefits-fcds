@@ -98,7 +98,7 @@
   
   header {
     @apply fixed top-0 left-0 right-0 z-50 py-5;
-    @apply bg-white/80 dark:bg-cds-dark/75;
+    @apply bg-cds-blue/80 dark:bg-cds-dark/30;
     @apply backdrop-blur-sm dark:saturate-200;
   }
   

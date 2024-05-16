@@ -29,7 +29,7 @@ export default async function Home() {
       <section className="animate space-y-6">
         <div className="flex flex-wrap gap-y-2 items-center justify-between">
           <h5 className="hover:underline font-semibold text-2xl text-black dark:text-white">
-            <a href="/formacion">Beneficios de Formación y desarrollo 🧩</a>
+            <Link href="/formacion">Beneficios de Formación y desarrollo 🧩</Link>
           </h5>
           <Link href="/formacion">
             Mostrar todos
@@ -45,13 +45,13 @@ export default async function Home() {
       <section className="animate space-y-6">
         <div className="flex flex-wrap gap-y-2 items-center justify-between">
           <h5 className="font-semibold text-2xl hover:underline text-black dark:text-white">
-            <a href="/bienestar">Cuidamos tu bienestar 🌱</a>
+            <Link href="/bienestar">Cuidamos tu bienestar 🌱</Link>
           </h5>
           <Link href="/bienestar">
             Mostrar todos
           </Link>
         </div>
-        <div className="grid gap-8">
+        <div className="grid gap-8 md:gap-12">
           {blogs?.data?.filter((blog:any) => blog.attributes.benefit_categorie.data.attributes.slug === 'bienestar').slice(0, 3).map((blog:any) => (
             <Card blog={blog} />
           ))}
@@ -61,13 +61,13 @@ export default async function Home() {
       <section className="animate space-y-6">
         <div className="flex flex-wrap gap-y-2 items-center justify-between">
           <h5 className="font-semibold text-2xl hover:underline text-black dark:text-white">
-            <a href="/entorno">¡Un entorno mágico! 🪄</a>
+            <Link href="/entorno">¡Un entorno mágico! 🪄</Link>
           </h5>
           <Link href="/entorno">
             Mostrar todos
           </Link>
         </div>
-        <div className="grid md:grid-cols-2 gap-4">
+        <div className="grid gap-4">
           {blogs?.data?.filter((blog:any) => blog.attributes.benefit_categorie.data.attributes.slug === 'entorno').slice(0, 4).map((blog:any) => (
             <BlogCard blog={blog}/>
           ))}
