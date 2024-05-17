@@ -1,4 +1,3 @@
-import { fetchSeeBlogs } from '@/app/services'
 import Container from '@/components/Container'
 import Image from 'next/image'
 import Link from 'next/link'
