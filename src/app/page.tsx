@@ -37,7 +37,10 @@ export default async function Home() {
         </div>
         <div className="grid md:grid-cols-2 gap-4">
           {blogs?.data?.filter((blog:any) => blog.attributes.benefit_categorie.data.attributes.slug === 'formacion').slice(0, 4).map((blog:any) => (
-            <BlogCard blog={blog}/>
+            <div key={blog.id}>
+              <BlogCard blog={blog}/>
+            </div>
+            
           ))}
         </div>
       </section>
@@ -53,7 +56,9 @@ export default async function Home() {
         </div>
         <div className="grid gap-8 md:gap-12">
           {blogs?.data?.filter((blog:any) => blog.attributes.benefit_categorie.data.attributes.slug === 'bienestar').slice(0, 3).map((blog:any) => (
-            <Card blog={blog} />
+            <div key={blog.id}>
+              <Card blog={blog} />
+            </div>
           ))}
         </div>
       </section>
@@ -69,7 +74,9 @@ export default async function Home() {
         </div>
         <div className="grid gap-4">
           {blogs?.data?.filter((blog:any) => blog.attributes.benefit_categorie.data.attributes.slug === 'entorno').slice(0, 4).map((blog:any) => (
-            <BlogCard blog={blog}/>
+            <div key={blog.id}>
+              <BlogCard blog={blog}/>
+          </div>
           ))}
         </div>
       </section>

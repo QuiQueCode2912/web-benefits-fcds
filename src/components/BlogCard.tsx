@@ -3,7 +3,7 @@ import React from 'react'
 
 const BlogCard = ({blog}:any) => {
   return (
-    <Link key={`${blog.id}`} href={`/benefit/${blog.id}`} className="group rounded-lg relative block overflow-hidden">
+    <Link  href={`/benefit/${blog.id}`} className="group rounded-lg relative block overflow-hidden">
               <div className="relative h-48 overflow-hidden">
                 <img className="object-cover absolute top-0 left-0 w-full h-48 group-hover:scale-110 duration-300" src={`${process.env.LOCALHOST}${blog.attributes.image.data.attributes.url}`} alt="Fotografía" />
               </div>

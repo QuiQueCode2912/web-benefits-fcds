@@ -16,7 +16,9 @@ export default async function page()  {
       </div>
       <div className="grid gap-4">
           {blogs?.data?.filter((blog:any) => blog.attributes.benefit_categorie.data.attributes.slug === 'entorno').slice(0, 4).map((blog:any) => (
-            <BlogCard blog={blog}/>
+            <div key={blog.id}>
+              <BlogCard blog={blog}/>
+            </div>
           ))}
         </div>
     </div>

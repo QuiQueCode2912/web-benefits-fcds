@@ -20,7 +20,9 @@ export default async function page() {
         </div>
         <div className="grid md:grid-cols-2 gap-4">
             {blogs?.data?.filter((blog:any) => blog.attributes.benefit_categorie.data.attributes.slug === 'formacion').map((blog:any) => (
-              <BlogCard blog={blog}/>
+              <div key={blog.id}>
+                <BlogCard blog={blog}/>
+            </div>
             ))}
         </div>
       </div>

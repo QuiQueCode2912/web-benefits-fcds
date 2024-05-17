@@ -15,7 +15,7 @@ const Card = ({blog}:any) => {
   const formattedDate = formatDate(updatedAt);
 
   return (
-    <div key={blog.id} className="flex flex-col md:flex-row rounded-lg relative ">
+    <div  className="flex flex-col md:flex-row rounded-lg relative ">
               <div className="relative md:w-1/3 h-48">
                 <img width="1500" height="500" className="object-cover top-0 left-0 w-full h-48 group-hover:scale-110 duration-300" src={`${process.env.LOCALHOST}${blog.attributes.image.data.attributes.url}`} alt="Fotografía" />
               </div>
